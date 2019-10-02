@@ -14,7 +14,7 @@ const client = new faunadb.Client({
 exports.handler = (event, context, callback) => {
 
   // get the lolly ID from the request
-  const path = event.queryStringParameters.id.replace("/", "");
+  const path = event.queryStringParameters.id.replace("/lolly", "");
 
   // find the lolly data in the DB
   client.query(
