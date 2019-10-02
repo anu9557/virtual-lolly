@@ -14,7 +14,7 @@ const client = new faunadb.Client({
 exports.handler = (event, context, callback) => {
 
   // get the lolly ID from the request
-  const path = event.queryStringParameters.id.replace("/lolly/*", "");
+  const path = event.queryStringParameters.id.replace("/", "");
 
   // find the lolly data in the DB
   client.query(
@@ -37,7 +37,7 @@ exports.handler = (event, context, callback) => {
       body: JSON.stringify(error),
       statusCode: 301,
       headers: {
-        Location: `/melted/index.html`,
+        Location: error,
       }
     });
   });
