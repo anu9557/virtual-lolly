@@ -37,7 +37,7 @@ exports.handler = (event, context, callback) => {
       body: JSON.stringify(error),
       statusCode: 301,
       headers: {
-        Location: error,
+        Location: `/melted/index.html`,
       }
     });
   });
