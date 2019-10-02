@@ -31,7 +31,7 @@ exports.handler = (event, context, callback) => {
       console.log('success', response);
 
       // Trigger a new build to freeze this lolly forever
-      axios.post('https://api.netlify.com/build_hooks/5d946fe5b12c4cdd4bdb12b9')
+      axios.post('https://api.netlify.com/build_hooks/5d946405b12c4c343fdb12b0')
       .then(function (response) {
         console.log(response);
       })
