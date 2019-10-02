@@ -60,7 +60,7 @@ module.exports = (data) => `
           </svg>
         </div>
         <div class="info">
-          <p class="share">Your lolly is freezing. Share it with this link: <pre>https://quirky-galileo-5b1667.netlify.com/lolly/${data.lollyPath}</pre></p>
+          <p class="share">Your lolly is freezing. Share it with this link: <pre>https://quirky-galileo-5b1667.netlify.com/lolly/${data.lollyPath}/</pre></p>
           <div class="details">
             <p id="recipient" class="recipient">${data.recipientName}</p>
             <div id="message" class="message">${data.message}</div>
